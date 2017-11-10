@@ -1,5 +1,4 @@
 Universidade Federal de Santa Catarina - UFSC
-
 Departamento de Informática e Estatística - INE
 
 Programa de Pós-Graduação em Ciências da Computação - PROPG
