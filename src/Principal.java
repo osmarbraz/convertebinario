@@ -18,7 +18,7 @@ public class Principal {
     /**
      * Converte um valor inteiro para binário
      * @param n Um valor inteiro a ser convertido para binário
-     * @return Um vetor com o valor n convertido para binário
+     * @return Um vetor com o representação binaria de n
      */
     public static int[] converterBinario(int n) {
         int t = n;
