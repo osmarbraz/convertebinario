@@ -4,6 +4,7 @@
  * Programa de Pós-Graduação em Ciências da Computação - PROPG
  * Disciplinas: Projeto e Análise de Algoritmos
  * Prof Alexandre Gonçalves da Silva 
+ *
  * Baseado nos slides 93 da aula do dia 28/08/2017 
  * Converte para Binário
  * Usando invariante de laços, provamos a corretude de um algoritmo que converte 
