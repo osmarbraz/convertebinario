@@ -5,10 +5,17 @@
  * Disciplinas: Projeto e Análise de Algoritmos
  * Prof Alexandre Gonçalves da Silva 
  *
- * Baseado nos slides 93 da aula do dia 28/08/2017 
+ * Baseado nos slides 28 da aula do dia 25/08/2017  e slide 5 de 01/09/2017
+ *
  * Converte para Binário
  * Usando invariante de laços, provamos a corretude de um algoritmo que converte 
  * um número inteiro para a sua representação binária.
+ *
+ * Atenção:
+ * Vetor em java inicia em 0, os algoritmos consideram início em 1.
+ * A subtraçào de -1 ocorre somente no local de acesso ao vetor ou matriz 
+ * para manter a compatibilidade entre os algoritmos.
+ * 
  */
 
 /**
@@ -24,16 +31,17 @@ public class Principal {
     public static int[] converterBinario(int n) {
         int t = n;
         //Tamanho do vetor
-        int tamanho = (int) (Math.log10(n) / Math.log10(2)) + 1;
+        int tamanho = (int) (Math.log10(n) / Math.log10(2))+1;
         //Vetor de retorno
         int[] b = new int[tamanho];
-        int k = -1;
+        int k = 0;
         while (t > 0) {
             k = k + 1;
             // Precisa gravar de trás para frente do vetor
             // Do contrário, precisará inverter ao final o 
             // vetor para encontrar o resultado
-            b[tamanho - 1 - k] = t % 2;
+            //b[tamanho - 1 - k] = t % 2;
+            b[k-1] = t % 2;
             t = t / 2;
         }
         return b;
